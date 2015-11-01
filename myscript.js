@@ -1,38 +1,8 @@
-var data = [{
-    "k1": 13,
-        "doverA": "5.2"
-}, {
-    "k1": 23,
-        "doverA": "5.2"
-}, {
-    "k1": 33,
-        "doverA": "5.4"
-}, {
-    "k1": 43,
-        "doverA": "5.5"
-}, {
-    "k1": 53,
-        "doverA": "5.6"
-}, {
-    "k1": 63,
-        "doverA": "5.7"
-}, {
-    "k1": 73,
-        "doverA": "5.8"
-}, {
-    "k1": 83,
-        "doverA": "5.9"
-}, {
-    "k1": 93,
-        "doverA": "6.2"
-}, {
-    "k1": 99,
-        "doverA": "7.2"
-}, {
-    "k1": 103,
-        "doverA": "7.8"
-}]
-
+d3.json("csvFile.json", function(error, csvFile.json) {
+data = csvFile[0];
+update(data);
+});
+ 
 margin = {
     top: 20,
     right: 20,
