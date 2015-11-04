@@ -1,9 +1,12 @@
-var data = d3.csv("csvFile.csv", function(error, data) {
-//	console.log(data[0]);
-	data.forEach(function(d) {
-	d.doverA = +d.doverA; })
+var data = d3.csv("csvFile.csv", function(data) {
+	return {
+		"k1" : d.k1,
+		"doverA" : d.doverA
+		};
+	}, function(data) {
+		console.log(data[0]);
 });
- 
+
 margin = {
     top: 20,
     right: 20,
