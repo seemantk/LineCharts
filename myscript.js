@@ -1,6 +1,7 @@
-d3.json("csvFile.json", function(error, csvFile.json) {
-data = csvFile[0];
-update(data);
+var data = d3.csv("csvFile.csv", function(error, data) {
+//	console.log(data[0]);
+	data.forEach(function(d) {
+	d.doverA = +d.doverA; })
 });
  
 margin = {
